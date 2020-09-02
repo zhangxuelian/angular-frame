@@ -1,0 +1,20 @@
+{
+    /* 引入其他配置文件，继承配置 */
+    "extends": "./tsconfig.base.json",
+    /* 编译选项配置 */
+    "compilerOptions": {
+        /* 指定输出目录 */
+        "outDir": "../out-tsc/app",
+        /* 加载的声明文件包 */
+        "types": []
+    },
+    /* 表示编译需要编译的单个文件列表 */
+    "files": [
+        "../src/main.ts",
+        "../src/polyfills.ts"
+    ],
+    /* 表示编译需要编译的文件或目录 */
+    "include": [
+        "../src/**/*.d.ts"
+    ]
+}
