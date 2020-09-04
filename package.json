@@ -5,7 +5,7 @@
   "author": "zhangxuelian <761303248@qq.com>",
   "license": "MIT",
   "scripts": {
-    "start": "ng serve"
+    "start": "ng serve --open --port 8181"
   },
   "dependencies": {
     "@angular/common": "~10.0.6",
