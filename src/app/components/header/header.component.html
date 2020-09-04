@@ -1,0 +1,9 @@
+<div class="header-wrap">
+    <div class="header-content">
+        <div class="logo-title"><img src="assets/img/favicon.ico" /><span>angular-frame</span></div>
+        <ul class="menu-list">
+            <li *ngFor="let item of menu; index as i" (click)="linkRouter(item)" ng-repeat="item in menu">{{item}}
+            </li>
+        </ul>
+    </div>
+</div>

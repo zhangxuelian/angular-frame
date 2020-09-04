@@ -9,6 +9,11 @@
             "sourceRoot": "src",
             "projectType": "application",
             "prefix": "gxx",
+            "schematics": {
+                "@schematics/angular:component": {
+                    "styleext": "scss"
+                }
+            },
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
@@ -20,11 +25,10 @@
                         "tsConfig": "tsconfig/tsconfig.app.json",
                         "polyfills": "src/polyfills.ts",
                         "assets": [
-                            "src/favicon.ico",
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.css"
+                            "src/assets/css/reset.scss"
                         ],
                         "scripts": []
                     },
